@@ -1,0 +1,202 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Baloo Bhai 2', cursive;;
+}
+h1{
+    display: block;
+    margin: auto;
+    text-align: center;
+
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding: 8px 20px;
+    background-color: rgba( 64, 144, 172, 0.65 );
+    color: white;
+ }
+ 
+.navbar ul{
+    list-style: none;
+    display: flex; 
+}
+#home-logo img{
+    filter: invert(15%);
+    cursor: pointer; 
+    height: 25px;
+}
+/*add button & add user*/
+.actions{
+    display: flex;
+    filter: invert(15%);
+    cursor: pointer; 
+    padding: 10px;
+    margin: 10px;
+   float: right;
+   align-items: center;
+   
+}
+.actions img{
+    height: 25px;
+    justify-content: space-between;
+    margin: 10px;
+}
+.menu{
+    display: flex;
+     justify-content: space-between;
+    align-items: center;
+}
+.navbar .pointer{
+    padding: 0px 2px;
+    margin: 4px;
+    background-color: skyblue;
+    margin: 5px;
+    padding: 8px;
+    border-radius: 4px;
+}
+.navbar .pointer:hover{
+    opacity: .5;
+}
+.navbar .menu-input input{
+    background-color: transparent;
+    padding: 0;
+    width: 120px;
+    padding: 4px 0.5em;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+    background-color: rgba( 135, 206, 235, 1 );
+    color:white;
+    font-size: 1.15em;
+    line-height: 1.4;
+    color: black;
+}
+.navbar .menu-input input:focus{
+    background-color: white;
+}
+
+#boards{
+align-items: center;
+text-align: center;
+background-color: cornflowerblue;
+border-radius: 5px;
+height: fit-content;
+padding: 3px;
+margin: 0px 24px;
+cursor: pointer; 
+
+}
+.board-menu{
+    line-height: normal;
+}
+.app-title{
+    align-items: center;
+    padding: 3px;
+    margin: 6px 24px;
+    
+}
+.board-menu{
+    display: flex;
+    margin-top: 66px;
+    justify-content: space-between;
+}
+/* Content*/
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: url(../img/bg.jpg) no-repeat;
+}
+/*Task Listiting*/
+.board{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    overflow: auto;
+    
+
+}
+.task-list-wrapper{
+    flex-shrink: 0;
+    flex-basis: 240px;
+    max-height: 100%;
+    overflow: hidden;
+    /* background-color: tan; */
+    margin: 4px;
+    border-radius: 3px;
+    /* width: 100%; */
+
+}
+.task-list-title-container{
+    display: flex;
+    justify-content: space-between;
+    background-color: snow;
+    opacity: .6;
+    font-size: 1.4em;
+}
+.task-list-title {
+    margin: 4px;
+    font-weight: bold;
+}
+
+.task-list-more {
+    margin: 0 4px;
+}
+
+.task {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.task .task-edit {
+    float: right;
+    display: none;
+}
+
+.task:hover .task-edit {
+    display: inline;
+}
+
+.add-card-message, .add-list-message {
+    margin-bottom: 4px 0 8px;
+    background-color: aquamarine;
+}
+.add-card-message:hover, .add-list-message:hover {
+    background-color: rgb(172, 187, 182);
+}
+.task-list .task, .task-list input, .task-list textarea, .task-list button {
+    border-radius: 4px;
+}
+input, textarea {
+    border: none;
+    outline: none;
+}
+
+.add-card-form-actions, .add-list-form-actions {
+    margin: 10px 0;
+}
+
+.add-card-button, .add-list-button {
+    margin-right: 8px;
+    background-color: yellowgreen;
+}
+
+.add-card-cancel, .add-list-cancel {
+    position: relative;
+    top: 3px;
+}
+.task:hover{
+    background-color: rgb(228, 217, 238);
+}
